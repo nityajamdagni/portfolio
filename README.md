@@ -1,56 +1,20 @@
-# Nitya Jamdagni — Portfolio
+🌐 Nitya's Portfolio
 
-A dark, sci-fi/voyager-themed portfolio built with React, Vite, Tailwind CSS v4, and Framer Motion.
-Includes a "PORTFOLIO.SYS" boot-loader intro, an animated neural-network starfield background,
-and a light/dark theme toggle.
+Welcome to my personal portfolio repository! This website showcases my journey as a Full Stack Developer and AI enthusiast, highlighting my projects, technical skills, experience, and achievements.
 
-## Run locally
+🚀 About
 
-```bash
-npm install
-npm run dev
-```
+I am a Computer Science Engineering student passionate about building modern web applications and AI-powered solutions that solve real-world problems. This portfolio reflects my work, learning journey, and the technologies I enjoy working with.
 
-Then open the URL Vite prints (usually http://localhost:5173).
-
-## Build for production
-
-```bash
-npm run build
-```
-
-Output goes to `dist/`. Preview it with:
-
-```bash
-npm run preview
-```
-
-## Deploy to Vercel
-
-1. Push this folder to a GitHub repo.
-2. Go to https://vercel.com/new and import the repo.
-3. Framework preset: **Vite**. Build command: `npm run build`. Output directory: `dist`.
-4. Deploy.
-
-(Netlify works the same way — build command `npm run build`, publish directory `dist`.)
-
-## Editing your content
-
-Everything text-based — bio, experience, projects, skills, achievements, social links — lives in
-one place: `src/data/content.js`. Edit that file and the whole site updates; you shouldn't need to
-touch component files for routine content changes.
-
-To swap the "NJ" monogram in the About section for a real photo, drop an image into `public/` and
-replace the monogram block in `src/components/About.jsx` with an `<img>` tag.
-
-## Structure
-
-```
-src/
-  components/    UI sections (Hero, About, Experience, Projects, Skills, Contact, etc.)
-  context/       Theme (light/dark) provider
-  data/          content.js — all your real content in one file
-  index.css      Tailwind v4 theme tokens (colors, fonts) + global styles
-public/
-  Nitya_Jamdagni_Resume.pdf   Powers the "Download CV" button
-```
+✨ Features
+Responsive and modern UI
+Light & Dark mode
+Interactive animations
+Projects showcase
+Skills and tech stack
+Experience & achievements
+Contact section with social links
+🛠️ Tech Stack
+Frontend: React, Tailwind CSS, Vite
+Styling: Tailwind CSS
+Deployment: Vercel
