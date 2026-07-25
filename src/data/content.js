@@ -33,7 +33,7 @@ export const experience = [
   },
   {
     company: "Google Cloud Hackathon",
-    org: "Gen AI Exchange Hackathon 2025, powered by Hack2skill",
+    org: "Gen AI Exchange Hackathon 2025",
     role: "Team Lead",
     period: "Aug 2025 – Dec 2025",
     points: [
