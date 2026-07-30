@@ -8,6 +8,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import LeetCodeStats from "./components/LeetCodeStats";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -28,6 +29,7 @@ export default function App() {
               <Experience />
               <Projects />
               <Skills />
+              <LeetCodeStats />
               <Contact />
             </main>
             <Footer />

@@ -4,11 +4,12 @@ import { Moon, Sun, Menu, X } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 
 const NAV = [
-  { id: "about", label: "about", n: "01" },
-  { id: "experience", label: "experience", n: "02" },
-  { id: "projects", label: "projects", n: "03" },
-  { id: "skills", label: "skills", n: "04" },
-  { id: "contact", label: "contact", n: "05" },
+  { id: "about", label: "About", n: "01" },
+  { id: "experience", label: "Experience", n: "02" },
+  { id: "projects", label: "Projects", n: "03" },
+  { id: "skills", label: "Skills", n: "04" },
+  { id: "leetcode", label: "Leetcode", n: "05" },
+  { id: "contact", label: "Contact", n: "06" },
 ];
 
 export default function Navbar() {

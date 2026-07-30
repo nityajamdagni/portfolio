@@ -12,7 +12,7 @@ export const profile = {
     leetcode: "https://leetcode.com/u/nityajamdagni/",
   },
   bio: [
-    "Greetings, explorer! I'm Nitya, a full stack developer and AI enthusiast who builds intelligent, user-centric applications that solve real-world problems. As I begin my 4th year of Computer Science Engineering, I've shipped everything from AI-powered healthcare tools to productivity platforms.",
+    "Greetings! I'm Nitya, a full stack developer and AI enthusiast who builds intelligent, user-centric applications that solve real-world problems. As I begin my 4th year of Computer Science Engineering, I've shipped everything from AI-powered healthcare tools to productivity platforms.",
     "My journey includes interning at the Ministry of Electronics & IT (MeitY), leading my team to the Grand Finale of the Google Cloud Gen AI Exchange Hackathon, and building with React, Next.js, Node.js, Python, Firebase, and generative AI stacks like Gemini and Vertex AI.",
     "I'm driven by curiosity and collaboration — always chasing the next hackathon, the next hard problem, the next thing worth building.",
   ],

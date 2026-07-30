@@ -27,7 +27,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative max-w-6xl mx-auto px-6 sm:px-8 py-28">
-      <SectionHeading n="05" title="Let's Connect, Explorer" />
+      <SectionHeading n="06" title="Let's Connect ! " />
 
       <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8">
         <motion.div
