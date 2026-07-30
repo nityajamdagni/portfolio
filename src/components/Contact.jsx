@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Rocket } from "lucide-react";
-import { FaLinkedin, FaGithub, FaCode } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { profile } from "../data/content";
 import SectionHeading from "./SectionHeading";
 
 const TILES = [
   { label: "LinkedIn", icon: FaLinkedin, href: profile.links.linkedin },
   { label: "GitHub", icon: FaGithub, href: profile.links.github },
-  { label: "LeetCode", icon: FaCode, href: profile.links.leetcode },
+  { label: "LeetCode", icon: SiLeetcode, href: profile.links.leetcode },
   { label: "Email", icon: Mail, href: `mailto:${profile.email}` },
 ];
 
