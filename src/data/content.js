@@ -24,6 +24,7 @@ export const experience = [
     org: "Self-employed",
     role: "Full Stack Developer",
     period: "June 2026 – Present",
+    logo: { type: "neon", icon: "terminal" },
     points: [
       "Design and build responsive, production-ready websites for small businesses and associations, managing each project end-to-end from requirements to deployment",
       "Working with clients across sectors including sports associations, training academies, and security services",
@@ -33,9 +34,10 @@ export const experience = [
   },
   {
     company: "Google Cloud Hackathon",
-    org: "Gen AI Exchange Hackathon 2025",
+    org: "Gen AI Exchange Hackathon 2025, powered by Hack2skill",
     role: "Team Lead",
     period: "Aug 2025 – Dec 2025",
+    logo: { type: "image", src: "/google-cloud-logo.jpg" },
     points: [
       "Led a team of four to build an AI-powered mental wellness platform using Google Cloud technologies",
       "Developed full-stack features with React, Firebase, Vertex AI, and Gemini",
@@ -50,6 +52,8 @@ export const experience = [
     org: "Ministry of Electronics & IT",
     role: "Gen AI Intern",
     period: "July 2025 – Sept 2025",
+    location: "New Delhi · On-site",
+    logo: { type: "image", src: "/meity-logo.png" },
     points: [
       "Analyzed real-world Generative AI systems and proposed scalable implementation strategies for production environments",
       "Collaborated with cross-functional teams to evaluate feasibility and architecture of AI-based solutions",
@@ -62,6 +66,8 @@ export const experience = [
     org: "Web3 Education Program",
     role: "Scholar & Trainee",
     period: "Feb 2025 – May 2025",
+    location: "New York, USA · Remote",
+    logo: { type: "image", src: "/shefi-logo.jpg" },
     points: [
       "Built foundational understanding of distributed systems, blockchain architecture, and decentralized applications",
       "Explored real-world implementations of DeFi protocols and smart contract workflows",
