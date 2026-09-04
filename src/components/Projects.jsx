@@ -18,82 +18,98 @@ export default function Projects() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             whileHover={{ y: -6 }}
-            className="group relative flex flex-col rounded-2xl border border-white/10 bg-surface/60 backdrop-blur-sm p-6 hover:border-purple-glow/50 transition-colors"
+            className="group relative flex flex-col rounded-2xl border border-white/10 bg-surface/60 backdrop-blur-sm overflow-hidden hover:border-purple-glow/50 transition-colors"
           >
-            <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-blue-glow/0 via-transparent to-purple-glow/0 group-hover:from-blue-glow/10 group-hover:to-purple-glow/10 transition-all pointer-events-none" />
+            <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-blue-glow/0 via-transparent to-purple-glow/0 group-hover:from-blue-glow/10 group-hover:to-purple-glow/10 transition-all pointer-events-none z-10" />
 
-            <h3 className="font-display text-xl font-semibold text-text-hi">
-              {p.name}
-            </h3>
-            <p className="font-mono text-xs text-purple-glow mt-1 mb-4 tracking-wide uppercase">
-              {p.tagline}
-            </p>
+            {p.image && (
+              <div className="relative w-full aspect-video overflow-hidden border-b border-white/10 bg-void">
+                <img
+                  src={p.image}
+                  alt={`${p.name} screenshot`}
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            )}
 
-            <p className="text-text-lo text-sm leading-relaxed mb-4">
-              {p.description}
-            </p>
+            <div className="relative flex flex-col flex-1 p-6">
+              <h3 className="font-display text-xl font-semibold text-text-hi">
+                {p.name}
+              </h3>
+              <p className="font-mono text-xs text-purple-glow mt-1 mb-4 tracking-wide uppercase">
+                {p.tagline}
+              </p>
 
-            <ul className="space-y-2 mb-5">
-              {p.highlights.map((h, idx) => (
-                <li key={idx} className="flex gap-2 text-xs text-text-lo/90 leading-relaxed">
-                  <span className="text-cyan-glow shrink-0">▹</span>
-                  {h}
-                </li>
-              ))}
-            </ul>
+              <p className="text-text-lo text-sm leading-relaxed mb-5">
+                {p.description}
+              </p>
 
-            <div className="flex flex-wrap gap-2 mb-6 mt-auto">
-              {p.tech.map((t) => (
-                <span
-                  key={t}
-                  className="text-[11px] font-mono px-2.5 py-1 rounded-full border border-white/15 text-text-lo"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-
-            <div className="flex gap-4 pt-4 border-t border-white/10 font-mono text-xs">
-              {p.links.live && (
-                <a
-                  href={p.links.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-blue-glow hover:text-purple-glow transition-colors"
-                >
-                  <ExternalLink size={13} /> Live
-                </a>
+              {p.highlights && (
+                <ul className="space-y-2 mb-5">
+                  {p.highlights.map((h, idx) => (
+                    <li key={idx} className="flex gap-2 text-xs text-text-lo/90 leading-relaxed">
+                      <span className="text-cyan-glow shrink-0">▹</span>
+                      {h}
+                    </li>
+                  ))}
+                </ul>
               )}
-              {p.links.demo && (
-                <a
-                  href={p.links.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-blue-glow hover:text-purple-glow transition-colors"
-                >
-                  <ExternalLink size={13} /> Demo
-                </a>
+
+              {p.tech && (
+                <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+                  {p.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="text-[11px] font-mono px-2.5 py-1 rounded-full border border-white/15 text-text-lo"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
               )}
-              {p.links.apk && (
-                <a
-                  href={p.links.apk}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-blue-glow hover:text-purple-glow transition-colors"
-                >
-                  <Smartphone size={13} /> APK
-                </a>
-              )}
-              {p.links.github && (
-                <a
-                  href={p.links.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-blue-glow hover:text-purple-glow transition-colors"
-                >
-                  <FaGithub size={13} /> Code
-                </a>
-              )}
+
+              <div className={`flex gap-4 pt-4 border-t border-white/10 font-mono text-xs ${!p.tech ? "mt-auto" : ""}`}>
+                {p.links.live && (
+                  <a
+                    href={p.links.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-blue-glow hover:text-purple-glow transition-colors"
+                  >
+                    <ExternalLink size={13} /> Live
+                  </a>
+                )}
+                {p.links.demo && (
+                  <a
+                    href={p.links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-blue-glow hover:text-purple-glow transition-colors"
+                  >
+                    <ExternalLink size={13} /> Demo
+                  </a>
+                )}
+                {p.links.apk && (
+                  <a
+                    href={p.links.apk}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-blue-glow hover:text-purple-glow transition-colors"
+                  >
+                    <Smartphone size={13} /> APK
+                  </a>
+                )}
+                {p.links.github && (
+                  <a
+                    href={p.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-blue-glow hover:text-purple-glow transition-colors"
+                  >
+                    <FaGithub size={13} /> Code
+                  </a>
+                )}
+              </div>
             </div>
           </motion.article>
         ))}

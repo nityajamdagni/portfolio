@@ -123,6 +123,36 @@ export const projects = [
       live: "https://isaa-autism.netlify.app/",
     },
   },
+  {
+    name: "Pookie Notepad",
+    tagline: "A Cozy Little To-Do List",
+    description:
+      "A pastel, aesthetic-first to-do list with 10+ swappable themes to match your mood. Notes save right on your device — no login, no clutter.",
+    image: "/projects/pookie-notepad.png",
+    links: {
+      live: "https://pookie-notepad.netlify.app/",
+    },
+  },
+  {
+    name: "Twelve",
+    tagline: "A Digital Photo Album, One Month at a Time",
+    description:
+      "A minimalist album that holds exactly one photo and one memory per month. Grid or story view, with local export/import backup.",
+    image: "/projects/twelve.jpg",
+    links: {
+      live: "https://twelve-iota.vercel.app/",
+    },
+  },
+  {
+    name: "DSA Practice Quiz",
+    tagline: "Timed Practice for Data Structures & Algorithms",
+    description:
+      "A configurable DSA quiz covering Arrays, Binary Search, and Strings across easy/medium/hard difficulty, with mixed MCQ and written questions.",
+    image: "/projects/dsa-quiz.png",
+    links: {
+      live: "https://dsa-practice-quiz.netlify.app/",
+    },
+  },
 ];
 
 export const skillGroups = [
