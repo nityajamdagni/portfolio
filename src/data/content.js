@@ -23,7 +23,7 @@ export const experience = [
     company: "Freelance",
     org: "Self-employed",
     role: "Full Stack Developer",
-    period: "June 2026 – Present",
+    period: "Sept 2026 – Present",
     logo: { type: "neon", icon: "terminal" },
     points: [
       "Design and build responsive, production-ready websites for small businesses and associations, managing each project end-to-end from requirements to deployment",
